@@ -1,12 +1,12 @@
 body {
-    background: url("../images/background.svg") no-repeat;
-    background-size: cover;
+    background: url("../images/background.svg") no-repeat; /*Set background on body*/
+    background-size: cover; /*Set size of background image to cover entire screen*/
     position: relative;
     overflow: hidden;
-    /*width: 100%;*/
-    height: 100vh;
+    height: 100vh; /*Set height of the body equal to user screen height size*/
 }
 
+/* Card element style */
 .card {
     position: absolute;
     top: calc(50% - 200px);
@@ -14,16 +14,18 @@ body {
     border-radius: 24px;
     width: 300px;
     padding: 24px 16px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5); /*Background color with opacity*/
+    backdrop-filter: saturate(180%) blur(20px); /*Set filter on the area behind the card*/
     -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
 }
 
+/* Card image style */
 .card img {
     width: 100%;
     height: 210px;
 }
 
+/* Card title style */
 .card h4 {
     text-align: center;
     margin: 8px 0px 6px 0px;
@@ -32,6 +34,7 @@ body {
     font-size: 18px;
 }
 
+/* Card summary paragraph style */
 .card p {
     text-align: center;
     margin: 0px;
@@ -39,15 +42,16 @@ body {
     font-size: 18px;
 }
 
-.card button {
+/* Card show more button style */
+.card a {
     width: 100%;
-    margin-top: 16px;
-    padding: 12px 16px;
+    padding: 12px 0px;
+    text-align: center;
     background-color: transparent;
+    color: #212121;
     border-radius: 8px;
     border: .5px solid #212121;
-    color: #212121;
-}
-.card button{
-    color: #212121;
+    display: block;
+    text-decoration: none;
+    margin-top: 16px;
 }
